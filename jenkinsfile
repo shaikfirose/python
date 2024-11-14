@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        AWS_CREDENTIALS_ID = 'aws-credentials-id'  // Replace with your AWS credentials ID in Jenkins
-        TERRAFORM_DIR = 'path/to/your/terraform/directory'  // Path to Terraform files
+        AWS_CREDENTIALS_ID = jenkins  // Replace with your AWS credentials ID in Jenkins
+        TERRAFORM_DIR = 'terraform'  // Path to Terraform files
     }
 
     stages {
