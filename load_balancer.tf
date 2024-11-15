@@ -4,7 +4,7 @@
 resource "aws_lb" "app_lb" {
   name               = "app-lb"
   load_balancer_type = "application"
-  subnets            = [aws_subnet.public_subnet.id]  # Add more subnets here as needed
+  subnets            = [aws_subnet.public_subnet_1.id, aws_subnet.public_subnet_2.id]  # Add both public subnets
   security_groups    = [aws_security_group.web_sg.id]
 }
 
