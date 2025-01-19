@@ -3,7 +3,7 @@
 # Launch Template for Auto Scaling Group
 resource "aws_launch_template" "app_lt" {
   name_prefix   = "app-"
-  image_id      = "ami-0aebec83a182ea7ea"  # Replace with your preferred Amazon Linux AMI
+  image_id      = "ami-00bb6a80f01f03502"  # Replace with your preferred Amazon Linux AMI
   instance_type = "t2.micro"
 
   user_data = base64encode(<<-EOF
