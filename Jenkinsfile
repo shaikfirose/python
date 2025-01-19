@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        AWS_CREDENTIALS_ID = 'shaikfirose'  // Replace with your AWS credentials ID in Jenkins
+        AWS_CREDENTIALS_ID = 'shaik'  // Replace with your AWS credentials ID in Jenkins
         TERRAFORM_DIR = 'terraform'  // Path to Terraform files
     }
 
